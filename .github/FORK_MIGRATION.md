@@ -6,14 +6,14 @@ Migration date: 2026-08-25
 
 - Development fork: `hhhappb/dsh-desktop`
 - Upstream: `anywhere-labs/dsh-desktop`
-- Preserved backup: `hhhappb/deepseek-harness-desktop`
+- Retired repository: `hhhappb/deepseek-harness-desktop` (deleted 2026-08-25)
 - Migration branch: `codex/migrate-hhhappb-customizations`
 
-The backup repository remains unchanged. The development repository is a real GitHub fork whose parent and source are both `anywhere-labs/dsh-desktop`.
+The retired repository was deleted after its post-import customizations were audited. The development repository is a real GitHub fork whose parent and source are both `anywhere-labs/dsh-desktop`.
 
 ## Customization audit
 
-The backup repository imported the desktop baseline in commit `d6faaf3234e20605c95159e54f50c13db8bba612`. Its three later commits were audited through `9569aa75d68c6e4ff701b0ad427735584c1cba92`.
+The retired repository imported the desktop baseline in commit `d6faaf3234e20605c95159e54f50c13db8bba612`. Its three later commits were audited through `9569aa75d68c6e4ff701b0ad427735584c1cba92` before deletion.
 
 The behavior changes from the old `0.1.0-rc.8` runtime already exist in the new upstream's `0.1.1-rc.2` implementation:
 
@@ -26,7 +26,7 @@ The behavior changes from the old `0.1.0-rc.8` runtime already exist in the new 
 | Hidden Windows sandbox process window | `patches/dsh-sandbox-windows-acl@0.1.1-rc.2.patch` |
 | Safe browser launch from Electron Node mode | `patches/dsh-web-app@0.1.1-rc.2.patch` |
 
-No old patch or package pin is copied because doing so would downgrade DeepSeek Harness from `0.1.1-rc.2` to `0.1.0-rc.8` and duplicate behavior already maintained upstream. The documentation hash-only commit also requires no port because the new upstream owns its current bilingual documents and hashes.
+No old patch or package pin was copied because doing so would downgrade DeepSeek Harness from `0.1.1-rc.2` to `0.1.0-rc.8` and duplicate behavior already maintained upstream. The documentation hash-only commit also required no port because the new upstream owns its current bilingual documents and hashes.
 
 ## Sync and release boundary
 

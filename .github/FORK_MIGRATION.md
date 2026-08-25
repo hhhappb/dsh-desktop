@@ -32,4 +32,6 @@ No old patch or package pin is copied because doing so would downgrade DeepSeek 
 
 Use GitHub's **Sync fork** action to bring upstream commits into this fork, preferably through a review branch or pull request when local changes exist. Syncing a fork updates Git commits; it does not copy GitHub Releases, release assets, secrets, environments, or workflow run history.
 
+GitHub Actions was enabled for the development fork on 2026-08-25. Migration changes are validated through the fork's pull-request workflow before merging.
+
 Installer publishing and the application's update/download channel therefore require a separate fork-owned release setup. Do not repoint the update checker until the fork has a stable version endpoint and platform artifacts ready for the same version.

@@ -139,4 +139,4 @@ jobs:
           if [[ "$RELEASE_VERSION" == *-* ]]; then
             release_args+=(--prerelease)
           fi
-          gh release create "$RELEASE_TAG" release/* "${{release_args[@]}}"
+          gh release create "$RELEASE_TAG" release/* "${release_args[@]}"
